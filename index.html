@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Discount System</title>
+</head>
+<body class="px-[10px] py-[20px]">
+    <div>
+
+        <p class="flex justify-center"><b>DISCOUNT SYSTEM</b></p>
+
+        <br>
+
+        <div class="flex gap-[5px] md:justify-center">
+            <p>Product Amount:</p>
+            <input type="number" id="amount" class="px-[5px] border-[1px] border-black outline-none" placeholder="Enter Amount Here">
+        </div>
+        
+        <br>
+        
+        <div class="flex gap-[5px] md:justify-center">
+            <p>Discount Amount (%):</p>
+            <input type="number" id="discount" class="px-[3px] border-[1px] border-black outline-none" placeholder="Enter Discount here">
+        </div>
+        
+        <br>
+        
+        <div class="flex justify-center">
+            <button onclick="applyDiscount()" class="px-[10px] font-bold border-[2px] border-black">Apply Discount</button>
+        </div>
+        
+        <p id="blankp"></p>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <!-- tip calculator -->
+
+    <div>
+        <p class="font-bold flex justify-center">TIP CALCULATOR</p>
+
+        <br>
+
+        <div class="flex gap-[10px] justify-center">
+            <label for="amount"> Amount:</label>
+            <input type="number" id="amount2" class="px-[5px] border-[1px] border-black outline-none" placeholder="Enter Amount Here">
+        </div>
+
+        <br>
+
+        <div class="flex gap-[10px] justify-center">
+            <select name="tip" id="tip">
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="30">30%</option>
+                <option value="40">40%</option>
+                <option value="50">50%</option>
+                <option value="60">60%</option>
+                <option value="70">70%</option>
+                <option value="80">80%</option>
+                <option value="90">90%</option>
+                <option value="100">100%</option>
+            </select>
+            
+            <div class="flex justify-center">
+                <button onclick="totalAmount()" class="px-[10px] font-bold border-[2px] border-black">Total Amount</button>
+            </div>
+        </div>
+        
+        <p class="flex justify-center" id="displayamount"></p>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+    <!-- to do list -->
+
+    <div>
+        <p class="flex justify-center font-bold">To-Do</p>
+
+        <br>
+
+        <div class="flex justify-center gap-[5px]">
+            <input type="text" id="todo" class="px-[5px] border-[1px] border-black outline-none" placeholder="What Next">
+            <button onclick="todoButton()" class="px-[10px] font-bold border-[2px] border-black">ADD</button>
+        </div>
+
+        <p id="displaytodo"></p>
+    </div>
+
+    <br><br>
+        
+    <hr>
+        
+    <br><br>
+
+    <!-- random number generation with JS -->
+
+    <div>
+        <div class="flex justify-center">
+            <button onclick="generateNow()" class="px-[10px] font-bold border-[2px] border-black">GENERATE</button>
+        </div>
+
+        <br>
+        
+        <div class="flex gap-[5px] justify-center font-bold">
+            <p id="generatednumber"></p>
+            <p id="generatednumber2"></p>
+        </div>
+    </div>
+
+    <!-- object literal work -->
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Assignment -->
+
+    <div class="font-bold text-20px text-center space-y-[10px]">
+        <p id="newparagraph1"></p>
+        <p id="newparagraph2"></p>
+        <p id="newparagraph3"></p>
+        <p id="newparagraph4"></p>
+        <p id="newparagraph5"></p>
+        <p id="newparagraph6"></p>
+        <p id="newparagraph7"></p>
+        <p id="newparagraph8"></p>
+        <p id="newparagraph9"></p>
+        <p id="newparagraph10"></p>
+    </div>
+
+    <!-- Assignment2 -->
+
+    <div class="space-y-[20px]">
+        <div class="flex justify-center gap-[10px]">
+            <input type="number" id="userinput1" placeholder="Enter your First prediction here" class="w-[300px] px-[10px] border-[1px] border-black">
+            <!-- <input type="number" id="userinput2" placeholder="Enter your Second prediction here" class="w-[300px] px-[10px] border-[1px] border-black"> -->
+        </div>
+
+        <div class="flex justify-center font-bold gap-[30px]">
+            <p id="generate1"></p>
+        </div>
+        
+        <div class="flex justify-center">
+            <button onclick="playNow()" class="font-bold border-[2px] border-black p-[5px] w-[60px]">PLAY</button>
+        </div>
+
+        <p id="displayarea" class="flex justify-center"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
